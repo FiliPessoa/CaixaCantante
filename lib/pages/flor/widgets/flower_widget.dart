@@ -14,7 +14,7 @@ class FlowerWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Obx(
       () => CustomPaint(
-        size: const Size(180, 180),
+        size: const Size(180,180),
         foregroundPainter: DrawFlower(
           painter1: Paint()
             ..color = Colors.black12
