@@ -11,14 +11,13 @@ class HomePage extends GetView<HomeController> {
       appBar: AppBar(
         title: Text("Caixa e Flor Cantante"),
       ),
-
       body: Column(
         children: [
           Center(
             child: ElevatedButton(
               child: Text("Ir Para a Caixa"),
               onPressed: () => Get.to(
-                CaixaPage(),
+                CaixaCantante(),
               ),
             ),
           ),

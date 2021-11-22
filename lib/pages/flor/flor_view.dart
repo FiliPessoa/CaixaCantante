@@ -1,3 +1,5 @@
+import 'package:caixadois/pages/flor/MenuLua.dart';
+import 'package:caixadois/pages/flor/MenuSol.dart';
 import 'package:caixadois/pages/flor/flor_controller.dart';
 import 'package:caixadois/pages/flor/widgets/flower_widget.dart';
 import 'package:caixadois/pages/flor/widgets/slider_widget.dart';
@@ -11,6 +13,44 @@ class FlorPage extends GetView<FlorController> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
+          Container(
+              height: 80,
+              child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    Container(
+                        width: 50,
+                        height: 50,
+                        decoration: BoxDecoration(
+                            color: Colors.amber[500],
+                            shape: BoxShape.circle,
+                            border: Border.all(
+                              color: Colors.black,
+                              width: 1,
+                            )),
+                        child: ElevatedButton(
+                          child: Text(""),
+                          onPressed: () => Get.to(
+                            Menu1(),
+                          ),
+                        )),
+                    Container(
+                        width: 50,
+                        height: 50,
+                        decoration: BoxDecoration(
+                            color: Colors.grey[400],
+                            shape: BoxShape.circle,
+                            border: Border.all(
+                              color: Colors.black,
+                              width: 1,
+                            )),
+                        child: ElevatedButton(
+                          child: Text(""),
+                          onPressed: () => Get.to(
+                            Menu2(),
+                          ),
+                        )),
+                  ])),
           FlowerWidget(
             controller: controller,
           ),
@@ -62,4 +102,3 @@ class FlorPage extends GetView<FlorController> {
     );
   }
 }
-
