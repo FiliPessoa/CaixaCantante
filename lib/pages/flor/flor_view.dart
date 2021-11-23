@@ -1,5 +1,6 @@
-import 'package:caixadois/pages/flor/MenuLua.dart';
-import 'package:caixadois/pages/flor/MenuSol.dart';
+import 'package:caixadois/pages/flor/menu_custom.dart';
+import 'package:caixadois/pages/flor/menu_lua.dart';
+import 'package:caixadois/pages/flor/menu_sol.dart';
 import 'package:caixadois/pages/flor/flor_controller.dart';
 import 'package:caixadois/pages/flor/widgets/flower_widget.dart';
 import 'package:caixadois/pages/flor/widgets/slider_widget.dart';
@@ -29,9 +30,43 @@ class FlorPage extends GetView<FlorController> {
                               width: 1,
                             )),
                         child: ElevatedButton(
+                          style: ButtonStyle(
+                              backgroundColor: MaterialStateProperty.all<Color>(
+                                  Colors.amber),
+                              shape: MaterialStateProperty.all<
+                                      RoundedRectangleBorder>(
+                                  RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(55.0),
+                                      side: BorderSide(
+                                          width: 0.01, color: Colors.black)))),
                           child: Text(""),
                           onPressed: () => Get.to(
                             Menu1(),
+                          ),
+                        )),
+                        Container(
+                        width: 50,
+                        height: 50,
+                        decoration: BoxDecoration(
+                            color: Colors.white,
+                            shape: BoxShape.circle,
+                            border: Border.all(
+                              color: Colors.black,
+                              width: 1,
+                            )),
+                        child: ElevatedButton(
+                          style: ButtonStyle(
+                              backgroundColor: MaterialStateProperty.all<Color>(
+                                  Colors.white),
+                              shape: MaterialStateProperty.all<
+                                      RoundedRectangleBorder>(
+                                  RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(55.0),
+                                      side: BorderSide(
+                                          width: 0.01, color: Colors.black)))),
+                          child: Text(""),
+                          onPressed: () => Get.to(
+                            MenuCustom(),
                           ),
                         )),
                     Container(
@@ -45,6 +80,15 @@ class FlorPage extends GetView<FlorController> {
                               width: 1,
                             )),
                         child: ElevatedButton(
+                          style: ButtonStyle(
+                              backgroundColor:
+                                  MaterialStateProperty.all<Color>(Colors.grey),
+                              shape: MaterialStateProperty.all<
+                                      RoundedRectangleBorder>(
+                                  RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(55.0),
+                                      side: BorderSide(
+                                          width: 0.01, color: Colors.black)))),
                           child: Text(""),
                           onPressed: () => Get.to(
                             Menu2(),
@@ -53,6 +97,12 @@ class FlorPage extends GetView<FlorController> {
                   ])),
           FlowerWidget(
             controller: controller,
+          ),
+          Center(
+            child: ElevatedButton(
+              child: Text("Salvar"),
+              onPressed: () {}
+            ),
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.start,
@@ -97,6 +147,7 @@ class FlorPage extends GetView<FlorController> {
               )
             ],
           ),
+          
         ],
       ),
     );

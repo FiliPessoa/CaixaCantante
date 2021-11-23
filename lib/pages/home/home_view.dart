@@ -1,4 +1,5 @@
 import 'package:caixadois/pages/caixa/caixa_view.dart';
+import 'package:caixadois/pages/caixa/widgets/player_widget.dart';
 import 'package:caixadois/pages/flor/flor_view.dart';
 import 'package:caixadois/pages/home/home_controller.dart';
 import 'package:flutter/material.dart';
@@ -27,6 +28,14 @@ class HomePage extends GetView<HomeController> {
               onPressed: () => Get.to(
                 FlorPage(),
               ),
+            ),
+          ),
+          Center(
+            child: ElevatedButton(
+              child: Text("Ir Para a Caixa"),
+              onPressed: () => Get.to(PlayerWidget(
+                url: '',
+              )),
             ),
           ),
         ],

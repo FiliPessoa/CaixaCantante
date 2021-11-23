@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:caixadois/pages/caixa/caixa_controller.dart';
-import 'package:caixadois/pages/caixa/widgets/meuBotao_widget.dart';
-import 'package:caixadois/pages/caixa/widgets/meuTexto_widget.dart';
+import 'package:caixadois/pages/caixa/widgets/meubotao_widget.dart';
+import 'package:caixadois/pages/caixa/widgets/meutexto_widget.dart';
 
 class CaixaCantante extends StatefulWidget {
   @override

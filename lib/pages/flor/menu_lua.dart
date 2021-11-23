@@ -24,45 +24,69 @@ class Menu2 extends StatelessWidget {
           alignment: Alignment.center,
           children: [
             Positioned(
-              top: 10,
-              right: -10,
-              child: CustomPaint(size: Size(180, 180), painter: DrawFlower1()),
-            ),
+                top: 10,
+                right: -10,
+                child: RawMaterialButton(
+                  onPressed: () {},
+                  child:
+                      CustomPaint(size: Size(180, 180), painter: DrawFlower1()),
+                )),
             Positioned(
-              top: 10,
-              left: -10,
-              child: CustomPaint(size: Size(180, 180), painter: DrawFlower2()),
-            ),
+                top: 10,
+                left: -10,
+                child: RawMaterialButton(
+                  onPressed: () {},
+                  child:
+                      CustomPaint(size: Size(180, 180), painter: DrawFlower2()),
+                )),
             Positioned(
-              top: 175,
-              right: -10,
-              child: CustomPaint(size: Size(180, 180), painter: DrawFlower3()),
-            ),
+                top: 180,
+                right: -10,
+                child: RawMaterialButton(
+                  onPressed: () {},
+                  child:
+                      CustomPaint(size: Size(180, 180), painter: DrawFlower3()),
+                )),
             Positioned(
-              top: 175,
-              left: -10,
-              child: CustomPaint(size: Size(180, 180), painter: DrawFlower4()),
-            ),
+                top: 180,
+                left: -10,
+                child: RawMaterialButton(
+                  onPressed: () {},
+                  child:
+                      CustomPaint(size: Size(180, 180), painter: DrawFlower4()),
+                )),
             Positioned(
-              bottom: 175,
-              right: -10,
-              child: CustomPaint(size: Size(180, 180), painter: DrawFlower5()),
-            ),
+                bottom: 180,
+                right: -10,
+                child: RawMaterialButton(
+                  onPressed: () {},
+                  child:
+                      CustomPaint(size: Size(180, 180), painter: DrawFlower5()),
+                )),
             Positioned(
-              bottom: 175,
-              left: -10,
-              child: CustomPaint(size: Size(180, 180), painter: DrawFlower6()),
-            ),
+                bottom: 180,
+                left: -10,
+                child: RawMaterialButton(
+                  onPressed: () {},
+                  child:
+                      CustomPaint(size: Size(180, 180), painter: DrawFlower6()),
+                )),
             Positioned(
-              bottom: 10,
-              right: -10,
-              child: CustomPaint(size: Size(180, 180), painter: DrawFlower7()),
-            ),
+                bottom: 10,
+                right: -10,
+                child: RawMaterialButton(
+                  onPressed: () {},
+                  child:
+                      CustomPaint(size: Size(180, 180), painter: DrawFlower7()),
+                )),
             Positioned(
-              bottom: 10,
-              left: -10,
-              child: CustomPaint(size: Size(180, 180), painter: DrawFlower8()),
-            )
+                bottom: 10,
+                left: -10,
+                child: RawMaterialButton(
+                  onPressed: () {},
+                  child:
+                      CustomPaint(size: Size(180, 180), painter: DrawFlower8()),
+                ))
           ],
         )));
   }

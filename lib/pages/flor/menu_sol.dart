@@ -1,4 +1,8 @@
+import 'package:caixadois/pages/flor/widgets/flower_widget.dart';
 import 'package:flutter/material.dart';
+import 'package:caixadois/pages/flor/flor_controller.dart';
+import 'package:caixadois/pages/flor/widgets/slider_widget.dart';
+import 'package:get/get.dart';
 
 final Color amber = Color(0xFFFFF8E1);
 void main() => runApp(Menu1());
@@ -23,45 +27,69 @@ class Menu1 extends StatelessWidget {
           alignment: Alignment.center,
           children: [
             Positioned(
-              top: 10,
-              right: -10,
-              child: CustomPaint(size: Size(180, 180), painter: DrawFlower1()),
-            ),
+                top: 10,
+                right: -10,
+                child: RawMaterialButton(
+                  onPressed: () {},
+                  child:
+                      CustomPaint(size: Size(180, 180), painter: DrawFlower1()),
+                )),
             Positioned(
-              top: 10,
-              left: -10,
-              child: CustomPaint(size: Size(180, 180), painter: DrawFlower2()),
-            ),
+                top: 10,
+                left: -10,
+                child: RawMaterialButton(
+                  onPressed: () {},
+                  child:
+                      CustomPaint(size: Size(180, 180), painter: DrawFlower2()),
+                )),
             Positioned(
-              top: 175,
-              right: -10,
-              child: CustomPaint(size: Size(180, 180), painter: DrawFlower3()),
-            ),
+                top: 180,
+                right: -10,
+                child: RawMaterialButton(
+                  onPressed: () {},
+                  child:
+                      CustomPaint(size: Size(180, 180), painter: DrawFlower3()),
+                )),
             Positioned(
-              top: 175,
-              left: -10,
-              child: CustomPaint(size: Size(180, 180), painter: DrawFlower4()),
-            ),
+                top: 180,
+                left: -10,
+                child: RawMaterialButton(
+                  onPressed: () {},
+                  child:
+                      CustomPaint(size: Size(180, 180), painter: DrawFlower4()),
+                )),
             Positioned(
-              bottom: 175,
-              right: -10,
-              child: CustomPaint(size: Size(180, 180), painter: DrawFlower5()),
-            ),
+                bottom: 180,
+                right: -10,
+                child: RawMaterialButton(
+                  onPressed: () {},
+                  child:
+                      CustomPaint(size: Size(180, 180), painter: DrawFlower5()),
+                )),
             Positioned(
-              bottom: 175,
-              left: -10,
-              child: CustomPaint(size: Size(180, 180), painter: DrawFlower6()),
-            ),
+                bottom: 180,
+                left: -10,
+                child: RawMaterialButton(
+                  onPressed: () {},
+                  child:
+                      CustomPaint(size: Size(180, 180), painter: DrawFlower6()),
+                )),
             Positioned(
-              bottom: 10,
-              right: -10,
-              child: CustomPaint(size: Size(180, 180), painter: DrawFlower7()),
-            ),
+                bottom: 10,
+                right: -10,
+                child: RawMaterialButton(
+                  onPressed: () {},
+                  child:
+                      CustomPaint(size: Size(180, 180), painter: DrawFlower7()),
+                )),
             Positioned(
-              bottom: 10,
-              left: -10,
-              child: CustomPaint(size: Size(180, 180), painter: DrawFlower8()),
-            )
+                bottom: 10,
+                left: -10,
+                child: RawMaterialButton(
+                  onPressed: () {},
+                  child:
+                      CustomPaint(size: Size(180, 180), painter: DrawFlower8()),
+                ))
           ],
         )));
   }
@@ -81,6 +109,7 @@ class DrawFlower1 extends CustomPainter {
     painter1 = Paint()
       ..color = color1
       ..style = PaintingStyle.fill;
+
     painter2 = Paint()
       ..color = color1
       ..style = PaintingStyle.fill;

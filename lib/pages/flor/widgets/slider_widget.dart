@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:caixadois/pages/flor/flor_controller.dart';
+import 'package:audioplayers/audioplayers.dart';
 
 class SliderWidget extends GetView<FlorController> {
   final Rx<Color>? atualizarCor;
