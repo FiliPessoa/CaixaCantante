@@ -8,7 +8,9 @@ class MeuBotao extends StatefulWidget {
   bool isRound;
   Function callback;
   int i;
-  MeuBotao(this.i, this.meuNumero, this.cor, this.isRound, this.callback);
+  AudioCache player;
+  MeuBotao(this.i, this.meuNumero, this.cor, this.isRound, this.callback,
+      this.player);
 
   @override
   _MeuBotaoState createState() => _MeuBotaoState();
