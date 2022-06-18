@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:caixadois/pages/caixa/caixa_controller.dart';
 import 'package:caixadois/pages/caixa/widgets/meubotao_widget.dart';
 import 'package:caixadois/pages/caixa/widgets/meutexto_widget.dart';
@@ -13,6 +14,7 @@ class CaixaCantante extends StatefulWidget {
 class _CaixaCantante extends State<CaixaCantante> {
   int i = 0;
   String text = nota[0];
+
   void fazIsso2(int volta) {
     setState(() {
       i = volta;
@@ -20,6 +22,14 @@ class _CaixaCantante extends State<CaixaCantante> {
   }
 
   @override
+  void initState() {
+    super.initState();
+    SystemChrome.setPreferredOrientations([
+      DeviceOrientation.landscapeRight,
+      DeviceOrientation.landscapeLeft,
+    ]);
+  }
+
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
@@ -28,7 +38,7 @@ class _CaixaCantante extends State<CaixaCantante> {
               padding: const EdgeInsets.all(5.0),
               width: MediaQuery.of(context).size.width,
               height: MediaQuery.of(context).size.width / 4,
-              color: (Colors.lightGreen[500]),
+              color: (Colors.grey[400]),
               child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [

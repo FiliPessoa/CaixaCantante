@@ -6,9 +6,9 @@ import 'package:audioplayers/audioplayers.dart';
 class SliderWidget extends GetView<FlorController> {
   final Rx<Color>? atualizarCor;
   RxDouble sliderValue1 = 0.0.obs;
-  Rx<Color> thumbColor = Colors.yellow.obs;
-  Rx<Color> activeColor = Colors.yellow.obs;
-  Rx<Color> inactiveColor = Colors.yellow.obs;
+  Rx<Color> thumbColor = Colors.grey.obs;
+  Rx<Color> activeColor = Colors.grey.obs;
+  Rx<Color> inactiveColor = Colors.grey.obs;
 
   SliderWidget({Key? key, this.atualizarCor}) : super(key: key);
 

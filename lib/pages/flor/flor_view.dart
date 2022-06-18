@@ -44,31 +44,32 @@ class FlorPage extends GetView<FlorController> {
                             Menu1(),
                           ),
                         )),
-                    Container(
-                        width: 50,
-                        height: 50,
-                        decoration: BoxDecoration(
-                            color: Colors.white,
-                            shape: BoxShape.circle,
-                            border: Border.all(
-                              color: Colors.black,
-                              width: 1,
-                            )),
-                        child: ElevatedButton(
-                          style: ButtonStyle(
-                              backgroundColor: MaterialStateProperty.all<Color>(
-                                  Colors.white),
-                              shape: MaterialStateProperty.all<
-                                      RoundedRectangleBorder>(
-                                  RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(55.0),
-                                      side: BorderSide(
-                                          width: 0.01, color: Colors.black)))),
-                          child: Text(""),
-                          onPressed: () => Get.to(
-                            MenuCustom(),
-                          ),
-                        )),
+                    //       Container(
+                    //         width: 50,
+                    //         height: 50,
+                    //         decoration: BoxDecoration(
+                    //           color: Colors.white,
+                    //         shape: BoxShape.circle,
+                    //      border: Border.all(
+                    //      color: Colors.black,
+                    //      width: 1,
+                    //    )),
+                    //child: ElevatedButton(
+                    //R         style: ButtonStyle(
+                    //          backgroundColor: MaterialStateProperty.all<Color>(
+                    //             Colors.white),
+                    //      shape: MaterialStateProperty.all<
+                    //              RoundedRectangleBorder>(
+                    //           RoundedRectangleBorder(
+                    //              borderRadius: BorderRadius.circular(55.0),
+                    //              side: BorderSide(
+                    //                  width: 0.01, color: Colors.black)))),
+                    //   child: Text(""),
+                    //  onPressed: () => Get.to(
+                    //    MenuCustom(),
+                    // ),
+                    //)
+                    //),
                     Container(
                         width: 50,
                         height: 50,
@@ -98,25 +99,9 @@ class FlorPage extends GetView<FlorController> {
           FlowerWidget(
             controller: controller,
           ),
-          Center(
-            child: ElevatedButton(child: Text("Salvar"), onPressed: () {}),
-          ),
-          Center(
-            child: ElevatedButton(
-                child: Text("Set up 1"),
-                onPressed: () {
-                  controller.setTempoColor(
-                    tempo1: controller.color1,
-                    tempo2: controller.color5,
-                    tempo3: controller.color1,
-                    tempo4: controller.color5,
-                    tempo5: controller.color1,
-                    tempo6: controller.color5,
-                    tempo7: controller.color1,
-                    tempo8: controller.color5,
-                  );
-                }),
-          ),
+          //Center(
+          //child: ElevatedButton(child: Text("Salvar"), onPressed: () {}),
+          // ),
           Row(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [

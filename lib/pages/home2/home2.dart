@@ -38,7 +38,7 @@ List<String> nota = [
 //Colors.cyan[300],
 //(Colors.grey[300]),
 
-Color color1 = Colors.yellow[200]!;
+Color color1 = Colors.yellow;
 Color color2 = Colors.orange;
 Color color3 = Colors.purple;
 Color color4 = Colors.green;
@@ -46,6 +46,15 @@ Color color5 = Colors.red;
 Color color6 = Colors.blue;
 Color color7 = Colors.cyan;
 Color color0 = Colors.grey;
+
+Color caixa0 = color0;
+Color caixa1 = color1;
+Color caixa2 = color2;
+Color caixa3 = color3;
+Color caixa4 = color4;
+Color caixa5 = color5;
+Color caixa6 = color6;
+Color caixa7 = color7;
 
 Color tempo1 = color4;
 Color tempo2 = color1;

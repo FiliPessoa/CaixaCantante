@@ -20,92 +20,201 @@ class Menu1 extends GetView<FlorController> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        theme: ThemeData.dark().copyWith(scaffoldBackgroundColor: amber),
-        debugShowCheckedModeBanner: false,
-        home: Scaffold(
-            body: Stack(
-          alignment: Alignment.center,
-          children: [
-            Positioned(
-              top: 10,
-              right: -10,
-              child: GestureDetector(
-                child: RawMaterialButton(
-                  onPressed: () {
-                    controller.setTempoColor(
-                      tempo1: controller.color1,
-                      tempo2: controller.color5,
-                      tempo3: controller.color1,
-                      tempo4: controller.color5,
-                      tempo5: controller.color1,
-                      tempo6: controller.color5,
-                      tempo7: controller.color1,
-                      tempo8: controller.color5,
-                    );
-                  },
-                  child:
-                      CustomPaint(size: Size(180, 180), painter: DrawFlower1()),
-                ),
+      theme: ThemeData.dark().copyWith(scaffoldBackgroundColor: amber),
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+          body: Stack(
+        alignment: Alignment.center,
+        children: [
+          Positioned(
+            top: 10,
+            right: -10,
+            child: GestureDetector(
+              child: RawMaterialButton(
+                onPressed: () {
+                  controller.setTempoColor(
+                    tempo1: controller.color1,
+                    tempo2: controller.color1,
+                    tempo3: controller.color4,
+                    tempo4: controller.color4,
+                    tempo5: controller.color1,
+                    tempo6: controller.color1,
+                    tempo7: controller.color4,
+                    tempo8: controller.color4,
+                  );
+                  Get.back();
+                },
+                child:
+                    CustomPaint(size: Size(180, 180), painter: DrawFlower1()),
               ),
             ),
-            Positioned(
-                top: 10,
-                left: -10,
-                child: RawMaterialButton(
-                  onPressed: () {},
-                  child:
-                      CustomPaint(size: Size(180, 180), painter: DrawFlower2()),
-                )),
-            Positioned(
-                top: 180,
-                right: -10,
-                child: RawMaterialButton(
-                  onPressed: () {},
-                  child:
-                      CustomPaint(size: Size(180, 180), painter: DrawFlower3()),
-                )),
-            Positioned(
-                top: 180,
-                left: -10,
-                child: RawMaterialButton(
-                  onPressed: () {},
-                  child:
-                      CustomPaint(size: Size(180, 180), painter: DrawFlower4()),
-                )),
-            Positioned(
-                bottom: 180,
-                right: -10,
-                child: RawMaterialButton(
-                  onPressed: () {},
-                  child:
-                      CustomPaint(size: Size(180, 180), painter: DrawFlower5()),
-                )),
-            Positioned(
-                bottom: 180,
-                left: -10,
-                child: RawMaterialButton(
-                  onPressed: () {},
-                  child:
-                      CustomPaint(size: Size(180, 180), painter: DrawFlower6()),
-                )),
-            Positioned(
-                bottom: 10,
-                right: -10,
-                child: RawMaterialButton(
-                  onPressed: () {},
-                  child:
-                      CustomPaint(size: Size(180, 180), painter: DrawFlower7()),
-                )),
-            Positioned(
-                bottom: 10,
-                left: -10,
-                child: RawMaterialButton(
-                  onPressed: () {},
-                  child:
-                      CustomPaint(size: Size(180, 180), painter: DrawFlower8()),
-                ))
-          ],
-        )));
+          ),
+          Positioned(
+            top: 10,
+            left: -10,
+            child: GestureDetector(
+              child: RawMaterialButton(
+                onPressed: () {
+                  controller.setTempoColor(
+                    tempo1: controller.color1,
+                    tempo2: controller.color5,
+                    tempo3: controller.color1,
+                    tempo4: controller.color5,
+                    tempo5: controller.color1,
+                    tempo6: controller.color5,
+                    tempo7: controller.color1,
+                    tempo8: controller.color5,
+                  );
+                  Get.back();
+                },
+                child:
+                    CustomPaint(size: Size(180, 180), painter: DrawFlower2()),
+              ),
+            ),
+          ),
+          Positioned(
+            top: 180,
+            right: -10,
+            child: GestureDetector(
+              child: RawMaterialButton(
+                onPressed: () {
+                  controller.setTempoColor(
+                    tempo1: controller.color1,
+                    tempo2: controller.color1,
+                    tempo3: controller.color4,
+                    tempo4: controller.color5,
+                    tempo5: controller.color1,
+                    tempo6: controller.color1,
+                    tempo7: controller.color4,
+                    tempo8: controller.color5,
+                  );
+                  Get.back();
+                },
+                child:
+                    CustomPaint(size: Size(180, 180), painter: DrawFlower3()),
+              ),
+            ),
+          ),
+          Positioned(
+            top: 180,
+            left: -10,
+            child: GestureDetector(
+              child: RawMaterialButton(
+                onPressed: () {
+                  controller.setTempoColor(
+                    tempo1: controller.color4,
+                    tempo2: controller.color1,
+                    tempo3: controller.color5,
+                    tempo4: controller.color1,
+                    tempo5: controller.color4,
+                    tempo6: controller.color1,
+                    tempo7: controller.color5,
+                    tempo8: controller.color1,
+                  );
+                  Get.back();
+                },
+                child:
+                    CustomPaint(size: Size(180, 180), painter: DrawFlower4()),
+              ),
+            ),
+          ),
+          Positioned(
+            bottom: 180,
+            right: -10,
+            child: GestureDetector(
+              child: RawMaterialButton(
+                onPressed: () {
+                  controller.setTempoColor(
+                    tempo1: controller.color1,
+                    tempo2: controller.color1,
+                    tempo3: controller.color4,
+                    tempo4: controller.color1,
+                    tempo5: controller.color1,
+                    tempo6: controller.color1,
+                    tempo7: controller.color5,
+                    tempo8: controller.color1,
+                  );
+                  Get.back();
+                },
+                child:
+                    CustomPaint(size: Size(180, 180), painter: DrawFlower5()),
+              ),
+            ),
+          ),
+          Positioned(
+            bottom: 180,
+            left: -10,
+            child: GestureDetector(
+              child: RawMaterialButton(
+                onPressed: () {
+                  controller.setTempoColor(
+                    tempo1: controller.color1,
+                    tempo2: controller.color5,
+                    tempo3: controller.color2,
+                    tempo4: controller.color4,
+                    tempo5: controller.color1,
+                    tempo6: controller.color5,
+                    tempo7: controller.color2,
+                    tempo8: controller.color4,
+                  );
+                  Get.back();
+                },
+                child:
+                    CustomPaint(size: Size(180, 180), painter: DrawFlower6()),
+              ),
+            ),
+          ),
+          Positioned(
+            bottom: 10,
+            right: -10,
+            child: GestureDetector(
+              child: RawMaterialButton(
+                onPressed: () {
+                  controller.setTempoColor(
+                    tempo1: controller.color6,
+                    tempo2: controller.color4,
+                    tempo3: controller.color1,
+                    tempo4: controller.color5,
+                    tempo5: controller.color6,
+                    tempo6: controller.color4,
+                    tempo7: controller.color1,
+                    tempo8: controller.color5,
+                  );
+                  Get.back();
+                },
+                child:
+                    CustomPaint(size: Size(180, 180), painter: DrawFlower7()),
+              ),
+            ),
+          ),
+          Positioned(
+              bottom: 10,
+              left: -10,
+              child: RawMaterialButton(
+                onPressed: () {},
+                child: GestureDetector(
+                  child: RawMaterialButton(
+                    onPressed: () {
+                      controller.setTempoColor(
+                        tempo1: controller.color1,
+                        tempo2: controller.color4,
+                        tempo3: controller.color6,
+                        tempo4: controller.color5,
+                        tempo5: controller.color1,
+                        tempo6: controller.color4,
+                        tempo7: controller.color6,
+                        tempo8: controller.color5,
+                      );
+                      Get.back();
+                    },
+                    child: CustomPaint(
+                        size: Size(180, 180), painter: DrawFlower8()),
+                  ),
+                ),
+              ))
+        ],
+      )),
+    );
   }
 }
 

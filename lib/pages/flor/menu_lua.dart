@@ -1,4 +1,8 @@
+import 'package:caixadois/pages/flor/flor_controller.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
+import 'package:get/get_state_manager/src/simple/get_view.dart';
 
 final Color indigo = Color(0xFFC5CAE9);
 
@@ -13,7 +17,7 @@ Color color6 = Colors.blue;
 Color color7 = Colors.cyan;
 Color color0 = Colors.grey;
 
-class Menu2 extends StatelessWidget {
+class Menu2 extends GetView<FlorController> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -24,69 +28,189 @@ class Menu2 extends StatelessWidget {
           alignment: Alignment.center,
           children: [
             Positioned(
-                top: 10,
-                right: -10,
+              top: 10,
+              right: -10,
+              child: GestureDetector(
                 child: RawMaterialButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    controller.setTempoColor(
+                      tempo1: controller.color6,
+                      tempo2: controller.color1,
+                      tempo3: controller.color5,
+                      tempo4: controller.color6,
+                      tempo5: controller.color6,
+                      tempo6: controller.color1,
+                      tempo7: controller.color5,
+                      tempo8: controller.color6,
+                    );
+                    Get.back();
+                  },
                   child:
                       CustomPaint(size: Size(180, 180), painter: DrawFlower1()),
-                )),
+                ),
+              ),
+            ),
             Positioned(
-                top: 10,
-                left: -10,
+              top: 10,
+              left: -10,
+              child: GestureDetector(
                 child: RawMaterialButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    controller.setTempoColor(
+                      tempo1: controller.color6,
+                      tempo2: controller.color2,
+                      tempo3: controller.color5,
+                      tempo4: controller.color6,
+                      tempo5: controller.color6,
+                      tempo6: controller.color2,
+                      tempo7: controller.color5,
+                      tempo8: controller.color6,
+                    );
+                    Get.back();
+                  },
                   child:
                       CustomPaint(size: Size(180, 180), painter: DrawFlower2()),
-                )),
+                ),
+              ),
+            ),
             Positioned(
-                top: 180,
-                right: -10,
+              top: 180,
+              right: -10,
+              child: GestureDetector(
                 child: RawMaterialButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    controller.setTempoColor(
+                      tempo1: controller.color1,
+                      tempo2: controller.color6,
+                      tempo3: controller.color1,
+                      tempo4: controller.color6,
+                      tempo5: controller.color1,
+                      tempo6: controller.color6,
+                      tempo7: controller.color1,
+                      tempo8: controller.color6,
+                    );
+                    Get.back();
+                  },
                   child:
                       CustomPaint(size: Size(180, 180), painter: DrawFlower3()),
-                )),
+                ),
+              ),
+            ),
             Positioned(
-                top: 180,
-                left: -10,
+              top: 180,
+              left: -10,
+              child: GestureDetector(
                 child: RawMaterialButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    controller.setTempoColor(
+                      tempo1: controller.color6,
+                      tempo2: controller.color5,
+                      tempo3: controller.color6,
+                      tempo4: controller.color5,
+                      tempo5: controller.color6,
+                      tempo6: controller.color5,
+                      tempo7: controller.color6,
+                      tempo8: controller.color5,
+                    );
+                    Get.back();
+                  },
                   child:
                       CustomPaint(size: Size(180, 180), painter: DrawFlower4()),
-                )),
+                ),
+              ),
+            ),
             Positioned(
-                bottom: 180,
-                right: -10,
+              bottom: 180,
+              right: -10,
+              child: GestureDetector(
                 child: RawMaterialButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    controller.setTempoColor(
+                      tempo1: controller.color6,
+                      tempo2: controller.color6,
+                      tempo3: controller.color3,
+                      tempo4: controller.color3,
+                      tempo5: controller.color6,
+                      tempo6: controller.color6,
+                      tempo7: controller.color3,
+                      tempo8: controller.color3,
+                    );
+                    Get.back();
+                  },
                   child:
                       CustomPaint(size: Size(180, 180), painter: DrawFlower5()),
-                )),
+                ),
+              ),
+            ),
             Positioned(
-                bottom: 180,
-                left: -10,
+              bottom: 180,
+              left: -10,
+              child: GestureDetector(
                 child: RawMaterialButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    controller.setTempoColor(
+                      tempo1: controller.color6,
+                      tempo2: controller.color6,
+                      tempo3: controller.color4,
+                      tempo4: controller.color3,
+                      tempo5: controller.color6,
+                      tempo6: controller.color6,
+                      tempo7: controller.color4,
+                      tempo8: controller.color3,
+                    );
+                    Get.back();
+                  },
                   child:
                       CustomPaint(size: Size(180, 180), painter: DrawFlower6()),
-                )),
+                ),
+              ),
+            ),
             Positioned(
-                bottom: 10,
-                right: -10,
+              bottom: 10,
+              right: -10,
+              child: GestureDetector(
                 child: RawMaterialButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    controller.setTempoColor(
+                      tempo1: controller.color4,
+                      tempo2: controller.color5,
+                      tempo3: controller.color6,
+                      tempo4: controller.color6,
+                      tempo5: controller.color4,
+                      tempo6: controller.color5,
+                      tempo7: controller.color6,
+                      tempo8: controller.color6,
+                    );
+                    Get.back();
+                  },
                   child:
                       CustomPaint(size: Size(180, 180), painter: DrawFlower7()),
-                )),
+                ),
+              ),
+            ),
             Positioned(
-                bottom: 10,
-                left: -10,
+              bottom: 10,
+              left: -10,
+              child: GestureDetector(
                 child: RawMaterialButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    controller.setTempoColor(
+                      tempo1: controller.color1,
+                      tempo2: controller.color5,
+                      tempo3: controller.color6,
+                      tempo4: controller.color6,
+                      tempo5: controller.color1,
+                      tempo6: controller.color5,
+                      tempo7: controller.color6,
+                      tempo8: controller.color6,
+                    );
+                    Get.back();
+                  },
                   child:
-                      CustomPaint(size: Size(180, 180), painter: DrawFlower8()),
-                ))
+                      CustomPaint(size: Size(180, 180), painter: DrawFlower1()),
+                ),
+              ),
+            )
           ],
         )));
   }

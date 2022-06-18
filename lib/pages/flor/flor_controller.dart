@@ -11,7 +11,7 @@ class FlorController extends GetxController {
     Colors.blue,
   ];
 
-  Color color1 = Colors.yellow[700]!;
+  Color color1 = Colors.yellow;
   Color color2 = Colors.orange;
   Color color3 = Colors.purple;
   Color color4 = Colors.green;
@@ -20,13 +20,13 @@ class FlorController extends GetxController {
   Color color7 = Colors.cyan;
   Color color0 = Colors.grey;
 
-  Rx<Color> tempo1 = Colors.yellow.obs;
+  Rx<Color> tempo1 = Colors.green.obs;
   Rx<Color> tempo2 = Colors.yellow.obs;
-  Rx<Color> tempo3 = Colors.yellow.obs;
+  Rx<Color> tempo3 = Colors.red.obs;
   Rx<Color> tempo4 = Colors.yellow.obs;
-  Rx<Color> tempo5 = Colors.yellow.obs;
+  Rx<Color> tempo5 = Colors.green.obs;
   Rx<Color> tempo6 = Colors.yellow.obs;
-  Rx<Color> tempo7 = Colors.yellow.obs;
+  Rx<Color> tempo7 = Colors.red.obs;
   Rx<Color> tempo8 = Colors.yellow.obs;
 
   void setTempoColor(
