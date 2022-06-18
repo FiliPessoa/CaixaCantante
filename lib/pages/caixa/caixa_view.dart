@@ -4,6 +4,8 @@ import 'package:caixadois/pages/caixa/widgets/meubotao_widget.dart';
 import 'package:caixadois/pages/caixa/widgets/meutexto_widget.dart';
 
 class CaixaCantante extends StatefulWidget {
+  const CaixaCantante({Key? key}) : super(key: key);
+
   @override
   _CaixaCantante createState() => _CaixaCantante();
 }
@@ -24,8 +26,8 @@ class _CaixaCantante extends State<CaixaCantante> {
         child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
           Container(
               padding: const EdgeInsets.all(5.0),
-              width: 480,
-              height: 100,
+              width: MediaQuery.of(context).size.width,
+              height: MediaQuery.of(context).size.width / 4,
               color: (Colors.lightGreen[500]),
               child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -65,7 +67,8 @@ class _CaixaCantante extends State<CaixaCantante> {
                   ])),
           Container(
             padding: const EdgeInsets.all(5.0),
-            height: 100,
+            width: MediaQuery.of(context).size.width,
+            height: MediaQuery.of(context).size.width / 4,
             color: (Colors.brown[400]),
             child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,

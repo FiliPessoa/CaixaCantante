@@ -44,7 +44,7 @@ class FlorPage extends GetView<FlorController> {
                             Menu1(),
                           ),
                         )),
-                        Container(
+                    Container(
                         width: 50,
                         height: 50,
                         decoration: BoxDecoration(
@@ -99,10 +99,23 @@ class FlorPage extends GetView<FlorController> {
             controller: controller,
           ),
           Center(
+            child: ElevatedButton(child: Text("Salvar"), onPressed: () {}),
+          ),
+          Center(
             child: ElevatedButton(
-              child: Text("Salvar"),
-              onPressed: () {}
-            ),
+                child: Text("Set up 1"),
+                onPressed: () {
+                  controller.setTempoColor(
+                    tempo1: controller.color1,
+                    tempo2: controller.color5,
+                    tempo3: controller.color1,
+                    tempo4: controller.color5,
+                    tempo5: controller.color1,
+                    tempo6: controller.color5,
+                    tempo7: controller.color1,
+                    tempo8: controller.color5,
+                  );
+                }),
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.start,
@@ -147,7 +160,6 @@ class FlorPage extends GetView<FlorController> {
               )
             ],
           ),
-          
         ],
       ),
     );

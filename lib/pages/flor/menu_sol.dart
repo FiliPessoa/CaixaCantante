@@ -16,7 +16,7 @@ Color color6 = Colors.blue;
 Color color7 = Colors.cyan;
 Color color0 = Colors.grey;
 
-class Menu1 extends StatelessWidget {
+class Menu1 extends GetView<FlorController> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -27,13 +27,27 @@ class Menu1 extends StatelessWidget {
           alignment: Alignment.center,
           children: [
             Positioned(
-                top: 10,
-                right: -10,
+              top: 10,
+              right: -10,
+              child: GestureDetector(
                 child: RawMaterialButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    controller.setTempoColor(
+                      tempo1: controller.color1,
+                      tempo2: controller.color5,
+                      tempo3: controller.color1,
+                      tempo4: controller.color5,
+                      tempo5: controller.color1,
+                      tempo6: controller.color5,
+                      tempo7: controller.color1,
+                      tempo8: controller.color5,
+                    );
+                  },
                   child:
                       CustomPaint(size: Size(180, 180), painter: DrawFlower1()),
-                )),
+                ),
+              ),
+            ),
             Positioned(
                 top: 10,
                 left: -10,

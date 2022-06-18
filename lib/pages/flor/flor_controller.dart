@@ -10,6 +10,16 @@ class FlorController extends GetxController {
     Colors.red,
     Colors.blue,
   ];
+
+  Color color1 = Colors.yellow[700]!;
+  Color color2 = Colors.orange;
+  Color color3 = Colors.purple;
+  Color color4 = Colors.green;
+  Color color5 = Colors.red;
+  Color color6 = Colors.blue;
+  Color color7 = Colors.cyan;
+  Color color0 = Colors.grey;
+
   Rx<Color> tempo1 = Colors.yellow.obs;
   Rx<Color> tempo2 = Colors.yellow.obs;
   Rx<Color> tempo3 = Colors.yellow.obs;

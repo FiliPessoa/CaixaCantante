@@ -1,6 +1,7 @@
 import 'package:caixadois/main_bindings.dart';
 import 'package:caixadois/pages/home/home_binding.dart';
 import 'package:caixadois/pages/home/home_view.dart';
+import 'package:caixadois/pages/home2/home2.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: HomePage(),
+      home: MyHomePage(),
       initialBinding: MainBinding(),
     );
   }
